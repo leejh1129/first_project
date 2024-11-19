@@ -14,6 +14,7 @@
         <!-- 원래는 idx를 키로 사용하면 안됨 -->
         <tr v-for="(prod, idx) in products"
           v-bind:key="idx">
+          <!-- key = 식별자역활  -->
           <td>{{ prod.product_name }}</td>
           <td>{{ prod.price }}</td>
           <td>{{ prod.category }}</td>

@@ -1,7 +1,7 @@
 <!-- view/OnEvent.vue -->
 <template>
   <div>
-    <!-- self 자기자신을 제외한 하위태그는 신경안씀 -->
+    <!-- self 자기자신을 제외한 하위태그는 신경안씀 (태그가 여려개 중첩될때 이벤트를 자기자신을 선택했을때만 사용되게)-->
     <form v-on:click.self="msg('form')">
       Form
       <!-- once 한번만 호출됨 -->

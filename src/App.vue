@@ -10,7 +10,8 @@
     <!-- path가 길경우 name속성으로 불러오는 방법 -->
     <router-link v-bind:to="{ name : 'listBind' }">ListBinding</router-link> |
     <router-link :to="{ path : '/ifBinding' }">IfBinding</router-link> | <!-- v-bind = : 로 생략가능 -->
-    <router-link to="/OnEvent">OnEvent</router-link>
+    <router-link to="/OnEvent">OnEvent</router-link> |
+    <router-link to="/comWatch">ComputedWatch</router-link> |
   </nav>
   <h1>모든 페이지에 출력</h1>
   <router-view/>
